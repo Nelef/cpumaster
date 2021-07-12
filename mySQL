@@ -1,0 +1,41 @@
+drop database gundam;
+
+create database gundam default character set utf8 collate utf8_general_ci;
+use gundam;
+
+
+drop table user;
+create table user (
+    id int(11) not null auto_increment,
+    email varchar(50) not null,
+    password varchar(40) not null,
+    image mediumblob,
+    primary key(id),
+    index(email)
+) ENGINE=InnoDB default character set utf8 collate utf8_general_ci;
+
+drop table review;
+create table review (
+    reviewid int(11) not null auto_increment,
+    userid int(11) not null,
+    time timestamp default current_timestamp,
+    picture mediumblob,
+    memo text default null,
+    primary key(reviewid),
+    foreign key(userid) references user(id) on delete cascade on update cascade,
+    index(time)
+) ENGINE=InnoDB default character set utf8 collate utf8_general_ci;
+
+
+CREATE TABLE reply (
+    replyid INT(11) NOT NULL AUTO_INCREMENT,
+    reviewid INT(11) NOT NULL,
+    userid INT(11) NOT NULL,
+    time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    memo TEXT NOT NULL,
+    PRIMARY KEY (replyid),
+    FOREIGN KEY (reviewid) REFERENCES review(reviewid) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (userid) REFERENCES user(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    INDEX (reviewid),
+    INDEX (time)
+) ENGINE=InnoDB DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;

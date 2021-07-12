@@ -1,0 +1,178 @@
+header, footer {
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.model {
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    text-align: left;
+}
+
+#SD, #RG, #HG, #MG {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* img {
+    border-radius: 10pt;
+    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.4);
+
+} */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+tr,
+td,
+th {
+    border: 2px solid black;
+}
+
+.grade_desc th {
+    background-color: darkgray;
+    color: white;
+}
+
+.grade_desc td,
+.grade_desc th {
+    border: 2px solid lightgray;
+    padding: 16px;
+}
+
+.grade_desc tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+nav li {
+    display: inline;
+}
+
+li a {
+    background-color: darkgray;
+    color: yellow;
+    padding: 6px 50px;
+    text-decoration: none;
+    border-radius: 10px 0;
+}
+
+li a:hover {
+    background-color: lightgray;
+    color: blue;
+}
+
+.login_btn {
+    background-color: darkgray;
+    color: yellow;
+    padding: 6px 50px;
+    font-size: 15px;
+    text-decoration: none;
+    border: 0;
+    border-radius: 10px 0;
+}
+
+.login_btn:hover {
+    background-color: lightgray;
+    color: blue;
+}
+
+#btn_grade_desc {
+    background-color: lightgray;
+    text-align: center;
+    padding: 6px;
+}
+
+#btn_grade_desc:hover {
+    background-color: darkgray;
+    color: yellow;
+}
+
+.img_frame {
+    background-color: lightgray;
+    overflow: auto;
+    border: 2px solid gray;
+    margin-top: 10px;
+}
+
+.user_image {
+    width: 250px;
+    margin: 10px;
+    float: left;
+    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.4);
+}
+
+.user_memo {
+    color: black;
+}
+
+.user_thumbnail {
+    width: 28px;
+    float: left;
+    border-radius: 15px;
+}
+
+.user_email {
+    float: left;
+    padding-left: 10px;
+}
+
+.user_date {
+    float: right;
+    padding-left: 10px;
+}
+
+.user_info {
+    background-color: darkgray;
+    clear: left;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+}
+
+.reply {
+    background-color: lightgray;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+
+.reply .user_info{
+    background-color: darkgray;
+    margin: 0px;
+}
+
+#refresh, #write_review{
+    background-color: gray;
+    color:white;
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+#refresh:hover, #write_review:hover, #write_reply:hover{
+    background-color: lightgray;
+    color:black;
+}
+
+
+#write_review a , #write_reply a{
+    color:white;
+    text-decoration: none;
+}
+
+#write_reply{
+    background-color: gray;
+    color:white;
+    text-align: center;
+    padding: 6px;
+}
