@@ -1,6 +1,5 @@
 # cpumaster
 # my first db website
-# 현재 완성본 유실_ 백업본 복원.
 
 
 
